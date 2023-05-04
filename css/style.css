@@ -1,0 +1,143 @@
+:root{
+    --Softorange: hsl(35, 77%, 62%);
+    --Softred: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; width: 100%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.offcanvas{
+    --bs-offcanvas-width: 250px;
+}
+.nav-link{
+    color: var(--Very-dark-blue);
+    font-weight: 500;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: var(--Softred);
+}
+.img-cont{
+    background-image: url("/assets/images/image-web-3-desktop.jpg");
+    height: calc(60vh / 2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+.heading{
+    height: calc(60vh / 2);
+}
+.more-info{
+    height: calc(60vh / 2);
+}
+.heading h1{
+    font-size: 60px;
+    width: 100%;
+    color: var(--Very-dark-blue);
+    font-weight: bold;
+}
+.btn{
+    background-color: var(--Softred);
+    border-radius: 0;
+    letter-spacing: 5px;
+    color: var(--Off-white);
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn:hover{
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+}
+.more-info p{
+    font-size: 20px !important;
+}
+.right{
+    background-color: var(--Very-dark-blue);
+}
+.right h1{
+    color: var(--Softorange);
+}
+.right h4{
+    color: var(--Off-white);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.right h4:hover{
+    color: var(--Softorange);
+}
+.right p{
+    width: 75%;
+}
+.right hr{
+    color: var(--Off-white);
+}
+.end-sec .container{
+    height: 15vh;
+}
+.end-sec img{
+    width: 40%;
+}
+.description{
+    height: 15vh;
+}
+.description h5{
+    color: var(--Very-dark-blue);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.description h5:hover{
+    color: var(--Softred);
+}
+.description p{
+    width: 90%;
+}
+@media  (max-width: 700px) {
+    .img-cont{
+        background-image: url("/assets/images/image-web-3-mobile.jpg");
+        height: calc(50vh - 50px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .heading{
+        height: calc(25vh - 25px);
+    }
+    .more-info{
+        height: calc(25vh - 25px);
+    }
+    .heading h1{
+        font-size: 32px;
+        width: 70%;
+        color: var(--Very-dark-blue);
+    }
+    .more-info p{
+        font-size: 16px !important;
+    }
+    .btn{
+        background-color: var(--Softred);
+        border-radius: 0;
+        letter-spacing: 3px;
+        color: var(--Off-white);
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
